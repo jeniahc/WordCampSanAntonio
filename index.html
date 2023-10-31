@@ -10,7 +10,7 @@
 
     <title>WordCamp Conference San Antonio</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" id="Home">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
@@ -21,16 +21,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#About">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#speakers">Speakers</a>
+          <a class="nav-link" href="#Speakers">Speakers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#schedule">Schedule</a>
+          <a class="nav-link" href="#Schedule">Schedule</a>
         </li>
       </div>
     </div>
@@ -43,13 +43,13 @@
     <h1 class="display-4">WordCamp Conference San Antonio</h1>
     <p class="lead">A One-day Conference About WordPress</p>
     <div class="mt-5">
-  <button type="button" class="btn btn-secondary btn-lg">Register Now</button>
+  <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
   <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
 </div>
   </div>
 </div>
 <!-- /jumbotron -->
-    <div class="container pt-4">
+    <div class="container pt-4" id="About">
   <!-- about -->
   <div class="row">
     <div class="col-lg order-lg-2">
@@ -69,21 +69,42 @@
     <div class="col-lg order-3">
       3 of 3: Topics
       <h3 class="mb-4">What You'll Learn</h3>
-<ul>
-  <li><strong>WordPress 5</strong>: New Gutenberg editor</li>
-  <li><strong>WooCommerce</strong>: E-commerce platform</li>
-  <li><strong>Hosting</strong>: Managed web hosting</li>
-  <li><strong>Themes</strong>: Creating your theme</li>
-  <li><strong>Plugins</strong>: Develop your plugin</li>
-  <li><strong>Content</strong>: Writing and podcasts</li>
-</ul>
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action"><strong>WordPress 5</strong>: New Gutenberg editor</a>
+  <a href="#" class="list-group-item list-group-item-action"><strong>WooCommerce</strong>: E-commerce platform</a>
+  <a href="#" class="list-group-item list-group-item-action"><strong>Hosting</strong>: Managed web hosting</a>
+  <a href="#" class="list-group-item list-group-item-action"><strong>Themes</strong>: Creating your theme</a>
+  <a href="#" class="list-group-item list-group-item-action"><strong>Plugins</strong>: Develop your plugin</a>
+  <a href="#" class="list-group-item list-group-item-action"><strong>Content</strong>: Writing and podcasts</a>
+</div>
     </div>
   </div>
   <!-- /about -->
 </div>
+<!-- Modal -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="register">Register for WordCamp Conference</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
 
 <!-- speakers -->
-<h2 id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h2>
+<h2 id="Speakers" class="display-4 text-center my-5 text-muted">Speakers</h2>
 <div class="row">
   <div class="col-md-6 col-lg-4">
     <div class="card mb-3">
@@ -143,10 +164,54 @@
 <!-- /speakers -->
 
 <!-- schedule -->
-<h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
-[Conference schedule goes here]
+<h2 id="Schedule" class="display-4 text-center my-5 text-muted">Schedule</h2>
+<ul class="list-group">
+  <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">The Basics of the Basics</h5>
+      <span class="badge badge-pill badge-secondary p-2">9:00am</span>
+    </div>
+    <p class="mb-1">Speaker Name</p>
+  </li>
+   <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Creating your Theme</h5>
+      <span class="badge badge-pill badge-secondary p-2">10:00am</span>
+    </div>
+    <p class="mb-1">Speaker Name</p>
+  </li>
+   <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Keynote: WordPress 5.0 pt. 1</h5>
+      <span class="badge badge-pill badge-secondary p-2">11:00am</span>
+    </div>
+    <p class="mb-1">Speaker Name</p>
+  </li>
+   <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Lunch</h5>
+      <span class="badge badge-pill badge-secondary p-2">12:00am</span>
+    </div>
+    <p class="mb-1">Free!</p>
+  </li>
+   <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Keynote: WordPress 5.0 pt. 2</h5>
+      <span class="badge badge-pill badge-secondary p-2">2:00pm</span>
+    </div>
+    <p class="mb-1">Speaker Name</p>
+  </li>
+   <li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">Developing a Plugin</h5>
+      <span class="badge badge-pill badge-secondary p-2">3:00pm</span>
+    </div>
+    <p class="mb-1">Speaker Name</p>
+  </li>
+</ul>
+<!-- /schedule -->
 <!-- callout button -->
-<button type="button" class="btn btn-secondary btn-lg d-block mx-auto my-5">Don't Miss Out, Register Now</button>
+<button type="button" class="btn btn-secondary btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register">Don't Miss Out, Register Now</button>
 <!-- signup form -->
 <hr>
 <div class="row py-4 text-muted">
