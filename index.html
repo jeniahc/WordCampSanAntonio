@@ -44,7 +44,7 @@
     <p class="lead">A One-day Conference About WordPress</p>
     <div class="mt-5">
   <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
-  <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
+  <a class="btn btn-light btn-lg" href="#Speakers">See Speakers</a>
 </div>
   </div>
 </div>
@@ -92,7 +92,94 @@
         </button>
       </div>
       <div class="modal-body">
-        ...
+<div class="alert alert-dark alert-dismissible fade show" role="alert">
+  <strong>Hurry!</strong> Early bird registration ends in two days.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<form>
+  <h5>Basic Information</h5>
+  <div class="form-group">
+    <label for="inputName">Name:</label>
+    <input type="text" class="form-control" id="inputName" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label for="inputEmail">Email:</label>
+    <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+  </div>
+
+  <div class="form-group">
+  <label for="inputJobRole">Job Role:</label>
+  <select id="inputJobRole" class="form-control">
+  <option selected>Select</option>
+  <option value="1">Web Designer</option>
+  <option value="2">WordPress Developer</option>
+  <option value="3">Content Creator</option>
+  <option>Other</option>
+</select>
+</div>
+<hr>
+<h5>Which Topics Interest You The Most?</h5>
+<div class="form-group">
+  <div class="form-check">
+  <input type="checkbox" class="form-check-input" id="checkWordPressPlugins">
+  <label class="form-check-label" for="checkWordPressPlugins">WordPress Plugins</label>
+</div>
+  <div class="form-check">
+  <input type="checkbox" class="form-check-input" id="checkPHP">
+  <label class="form-check-label" for="checkPHP">PHP</label>
+</div>
+  <div class="form-check">
+  <input type="checkbox" class="form-check-input" id="checkCSSandJavascript">
+  <label class="form-check-label" for="checkCSSandJavascript">CSS and Javascript</label>
+</div>
+  <div class="form-check">
+  <input type="checkbox" class="form-check-input" id="checkContentCreation">
+  <label class="form-check-label" for="checkContentCreation">Content Creation</label>
+</div>
+</div>
+<hr>
+<h5>Payment Information</h5>
+
+    <div class="form-row">
+    <div class="form-group col-6">
+      <label for="inputCardNumber">Card Number:</label>
+      <input type="text" class="form-control" id="inputCardNumber" placeholder="Card Number">
+    </div>
+    <div class="form-group col-3">
+      <label for="inputZipCode">Zip Code:</label>
+      <input type="text" class="form-control" id="inputZipCode" placeholder="Zip Code">
+    </div>
+    <div class="form-group col-3">
+      <label for="inputCVV">CVV:</label>
+      <input type="text" class="form-control" id="inputCVV" placeholder="CVV">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-8">
+  <label for="inputExpirationMonth">Expiration Month:</label>
+  <select id="inputExpirationMonth" class="form-control">
+  <option selected>Select</option>
+  <option value="1">January</option>
+  <option value="2">February</option>
+  <option value="3">March</option>
+  <option>April</option>
+</select>
+</div>
+<div class="form-group col-md-4">
+  <label for="inputExpirationYear">Expiration Year:</label>
+  <select id="inputExpirationYear" class="form-control">
+  <option selected>Select</option>
+  <option value="1">2023</option>
+  <option value="2">2024</option>
+  <option value="3">2025</option>
+  <option>2026</option>
+</select>
+</div>
+</div>
+</form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -104,6 +191,7 @@
 <!-- /Modal -->
 
 <!-- speakers -->
+<div class="container pt-4">
 <h2 id="Speakers" class="display-4 text-center my-5 text-muted">Speakers</h2>
 <div class="row">
   <div class="col-md-6 col-lg-4">
@@ -161,9 +249,11 @@
 </div>
   </div>
 </div>
+</div>
 <!-- /speakers -->
 
 <!-- schedule -->
+<div class="container pt-4">
 <h2 id="Schedule" class="display-4 text-center my-5 text-muted">Schedule</h2>
 <ul class="list-group">
   <li class="list-group-item">
@@ -190,7 +280,7 @@
    <li class="list-group-item">
     <div class="d-flex justify-content-between">
       <h5 class="mb-1">Lunch</h5>
-      <span class="badge badge-pill badge-secondary p-2">12:00am</span>
+      <span class="badge badge-pill badge-secondary p-2">12:00pm</span>
     </div>
     <p class="mb-1">Free!</p>
   </li>
@@ -216,11 +306,13 @@
     <p class="mb-1">Uniqua Jones</p>
   </li>
 </ul>
+</div>
 <!-- /schedule -->
 <!-- callout button -->
 <button type="button" class="btn btn-secondary btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register">Don't Miss Out, Register Now</button>
 <!-- signup form -->
 <hr>
+<div class="container pt-4">
 <div class="row py-4 text-muted">
   <div class="col-md col-xl-5">
     <p><strong>About Northwest Vista College</strong></p>
@@ -249,14 +341,14 @@
           <a class="nav-link" href="#">Tracks</a>
         </li>
         <li class="nav-item">
-          <div class="dropdown">
+<div class="btn-group dropup">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
+    Back To Top
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+    <a class="dropdown-item" href="#Home">Home</a>
+    <a class="dropdown-item" href="#About">About</a>
+    <a class="dropdown-item" href="#Speakers">Speakers</a>
   </div>
 </div>
         </li>
@@ -266,6 +358,7 @@
       <small>&copy; 2023 WordCamp &amp; Northwest Vista College</small>
     </div>
   </div>
+</div>
 <!-- /footer -->
 <!-- /speakers -->
   
