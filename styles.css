@@ -1,127 +1,20 @@
-/* Body styling */
 body {
-  background: #ECECEC;
-  color: #2C2F33;
-  font-family: Helvetica, Arial;
-  font-size: 27px;
-  font-weight: 300;
-  line-height: 1.65em;
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 40px 10px;  
+  font: 100% Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
+  color: #000000;
 }
 
-
-/* Heading Styles */
-h1 {
-  font-family: Luminari;
-  font-size: 100px;
-  color: #2C2F33;
-  text-align: center;
-}
-
-
-/* Game Directions */
-.description {
-  text-align: center;
-  margin: 80px auto 40px;
-}
-
-
-/* Submit Button, Columns, Questions, and Inputs */
-.button-submit {
-  background: transparent;
-  border: 5px solid #fff;
-  border-style: outset;
-  border-radius: 6px;
-  color: #2C2F33;
-  cursor: pointer; 
-  display: block;
-  font-family: Luminari;
-  font-size: 20px;
-  font-weight: bold;  
-  margin: 0 auto 60px;
-  padding: 1em 2em; 
-  text-align: center; 
-}
-
-.button-submit:hover {
-  background-color: #6A6A6B;
-  color: #ECECEC;
-}
-
-.bucket {
-  display: inline-block;
-  margin-bottom: 40px;
-  width: 100%;
-}
-
-.choice-bucket {
-  display: inline-block;
-  float: left;
+nav ul {
   margin: 0;
   padding: 0;
-  width: 33.333333%;
+  list-style: none;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  display: inline;
+  padding: 6px 12px;
+  text-decoration: none;
 }
 
-.choice-bucket label {
-  font-size: 12px;
-  line-height: 13px;
-  margin: 15px 4%;
-}
-
-.choice-bucket input {
-  border: 7px #fff;
-  border-style: groove;
-  border-radius: 6px;
-  color: #2C2F33;
-  font-size: 18px;
-  margin: 15px 4%;
-  outline: 0;
-  padding: 16px 0;
-  text-indent: 20px;
-  width: 92%;  
-}
-
-.choice-bucket label ~ input {
-  margin-top: 0;
-}
-
-.highlight {
-  font-size: 18px;
-  line-height: 24px;
-  margin-left: 30px;
-  opacity: .8;
-}
-
-
-
-/* Answer Div */
-#answers {
-  margin: 60px 0;
-  background: #fff;
-  border-radius: 6px;
-  color: #713e94;
-  transition: 1s linear;
-}
-
-#answers p {
-  max-width: 760px;
-  margin: auto;
-  padding: 20px 0;
-}
-
-#answers p span {
-  font-weight: bold;
-}
-
-
-.hide {
-  opacity: 0;
-  height: 0;
-}
-
-.show {
-  opacity: 1;
-  height: 100%;
-}
+/*# sourceMappingURL=styles.css.map */
